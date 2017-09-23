@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlphaCompany.Onboarding.WebApi", "src\AlphaCompany.Onboarding.WebApi.csproj", "{E02B798A-A71C-4CCB-A54D-4B43D0B50B59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlphaCompany.Onboarding.Web.Tests", "test\AlphaCompany.Onboarding.Web.Tests.csproj", "{9E1CBD27-5C9D-42FA-870E-122510B3B0EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E02B798A-A71C-4CCB-A54D-4B43D0B50B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E02B798A-A71C-4CCB-A54D-4B43D0B50B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E02B798A-A71C-4CCB-A54D-4B43D0B50B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E02B798A-A71C-4CCB-A54D-4B43D0B50B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E1CBD27-5C9D-42FA-870E-122510B3B0EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E1CBD27-5C9D-42FA-870E-122510B3B0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E1CBD27-5C9D-42FA-870E-122510B3B0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E1CBD27-5C9D-42FA-870E-122510B3B0EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54576A69-7653-4D01-8C08-7450C3E9FB00}
+	EndGlobalSection
+EndGlobal

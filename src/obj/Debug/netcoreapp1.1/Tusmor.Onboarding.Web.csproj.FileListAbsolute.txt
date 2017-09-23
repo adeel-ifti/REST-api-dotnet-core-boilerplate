@@ -1,0 +1,10 @@
+C:\Projects\BeautifulRestApi-master\src\bin\Debug\netcoreapp1.1\appsettings.json
+C:\Projects\BeautifulRestApi-master\src\bin\Debug\netcoreapp1.1\Tusmor.Onboarding.Web.deps.json
+C:\Projects\BeautifulRestApi-master\src\bin\Debug\netcoreapp1.1\Tusmor.Onboarding.Web.runtimeconfig.json
+C:\Projects\BeautifulRestApi-master\src\bin\Debug\netcoreapp1.1\Tusmor.Onboarding.Web.runtimeconfig.dev.json
+C:\Projects\BeautifulRestApi-master\src\bin\Debug\netcoreapp1.1\Tusmor.Onboarding.Web.dll
+C:\Projects\BeautifulRestApi-master\src\bin\Debug\netcoreapp1.1\Tusmor.Onboarding.Web.pdb
+C:\Projects\BeautifulRestApi-master\src\obj\Debug\netcoreapp1.1\Tusmor.Onboarding.Web.csproj.CoreCompileInputs.cache
+C:\Projects\BeautifulRestApi-master\src\obj\Debug\netcoreapp1.1\Tusmor.Onboarding.Web.AssemblyInfo.cs
+C:\Projects\BeautifulRestApi-master\src\obj\Debug\netcoreapp1.1\Tusmor.Onboarding.Web.dll
+C:\Projects\BeautifulRestApi-master\src\obj\Debug\netcoreapp1.1\Tusmor.Onboarding.Web.pdb

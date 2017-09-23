@@ -1,0 +1,16 @@
+C:\Projects\BeautifulRestApi-master\test\bin\Debug\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Projects\BeautifulRestApi-master\test\bin\Debug\netcoreapp1.1\xunit.runner.utility.netstandard15.dll
+C:\Projects\BeautifulRestApi-master\test\bin\Debug\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll
+C:\Projects\BeautifulRestApi-master\test\bin\Debug\netcoreapp1.1\appsettings.json
+C:\Projects\BeautifulRestApi-master\test\bin\Debug\netcoreapp1.1\BeautifulRestApi.Test.deps.json
+C:\Projects\BeautifulRestApi-master\test\bin\Debug\netcoreapp1.1\BeautifulRestApi.Test.runtimeconfig.json
+C:\Projects\BeautifulRestApi-master\test\bin\Debug\netcoreapp1.1\BeautifulRestApi.Test.runtimeconfig.dev.json
+C:\Projects\BeautifulRestApi-master\test\bin\Debug\netcoreapp1.1\BeautifulRestApi.Test.dll
+C:\Projects\BeautifulRestApi-master\test\bin\Debug\netcoreapp1.1\BeautifulRestApi.Test.pdb
+C:\Projects\BeautifulRestApi-master\test\bin\Debug\netcoreapp1.1\BeautifulRestApi.dll
+C:\Projects\BeautifulRestApi-master\test\bin\Debug\netcoreapp1.1\BeautifulRestApi.pdb
+C:\Projects\BeautifulRestApi-master\test\obj\Debug\netcoreapp1.1\BeautifulRestApi.Test.csprojResolveAssemblyReference.cache
+C:\Projects\BeautifulRestApi-master\test\obj\Debug\netcoreapp1.1\BeautifulRestApi.Test.csproj.CoreCompileInputs.cache
+C:\Projects\BeautifulRestApi-master\test\obj\Debug\netcoreapp1.1\BeautifulRestApi.Test.AssemblyInfo.cs
+C:\Projects\BeautifulRestApi-master\test\obj\Debug\netcoreapp1.1\BeautifulRestApi.Test.dll
+C:\Projects\BeautifulRestApi-master\test\obj\Debug\netcoreapp1.1\BeautifulRestApi.Test.pdb

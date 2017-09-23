@@ -1,0 +1,10 @@
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\src\bin\Debug\netcoreapp1.1\appsettings.json
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\src\bin\Debug\netcoreapp1.1\AlphaCompany.Onboarding.WebApi.deps.json
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\src\bin\Debug\netcoreapp1.1\AlphaCompany.Onboarding.WebApi.runtimeconfig.json
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\src\bin\Debug\netcoreapp1.1\AlphaCompany.Onboarding.WebApi.runtimeconfig.dev.json
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\src\bin\Debug\netcoreapp1.1\AlphaCompany.Onboarding.WebApi.dll
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\src\bin\Debug\netcoreapp1.1\AlphaCompany.Onboarding.WebApi.pdb
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\src\obj\Debug\netcoreapp1.1\AlphaCompany.Onboarding.WebApi.csproj.CoreCompileInputs.cache
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\src\obj\Debug\netcoreapp1.1\AlphaCompany.Onboarding.WebApi.AssemblyInfo.cs
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\src\obj\Debug\netcoreapp1.1\AlphaCompany.Onboarding.WebApi.dll
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\src\obj\Debug\netcoreapp1.1\AlphaCompany.Onboarding.WebApi.pdb

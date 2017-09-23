@@ -1,0 +1,16 @@
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\bin\Debug\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\bin\Debug\netcoreapp1.1\xunit.runner.utility.netstandard15.dll
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\bin\Debug\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\bin\Debug\netcoreapp1.1\appsettings.json
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\bin\Debug\netcoreapp1.1\AlphaCompany.Onboarding.Web.Tests.deps.json
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\bin\Debug\netcoreapp1.1\AlphaCompany.Onboarding.Web.Tests.runtimeconfig.json
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\bin\Debug\netcoreapp1.1\AlphaCompany.Onboarding.Web.Tests.runtimeconfig.dev.json
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\bin\Debug\netcoreapp1.1\AlphaCompany.Onboarding.Web.Tests.dll
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\bin\Debug\netcoreapp1.1\AlphaCompany.Onboarding.Web.Tests.pdb
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\bin\Debug\netcoreapp1.1\AlphaCompany.Onboarding.WebApi.dll
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\bin\Debug\netcoreapp1.1\AlphaCompany.Onboarding.WebApi.pdb
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\obj\Debug\netcoreapp1.1\AlphaCompany.Onboarding.Web.Tests.csprojResolveAssemblyReference.cache
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\obj\Debug\netcoreapp1.1\AlphaCompany.Onboarding.Web.Tests.csproj.CoreCompileInputs.cache
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\obj\Debug\netcoreapp1.1\AlphaCompany.Onboarding.Web.Tests.AssemblyInfo.cs
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\obj\Debug\netcoreapp1.1\AlphaCompany.Onboarding.Web.Tests.dll
+C:\Projects\Tusmor.Onboarding.WebApi - Copy\test\obj\Debug\netcoreapp1.1\AlphaCompany.Onboarding.Web.Tests.pdb
