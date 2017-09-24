@@ -17,8 +17,8 @@ namespace AlphaCompanyWebApi.Services
     public class ProductService : IProductService
     {
         private readonly ApiDbContext _context;
-        const string ServiceBusConnectionString = "Endpoint=sb://AlphaCompanydevsb.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=k7Ek7Qu/tuclCkqknL5Db8kGPRyD4trnWbNfqcYFz44=";
-        const string QueueName = "AlphaCompany.we.dev.sbcrmqueue";
+        const string ServiceBusConnectionString = "<your service bus connection>";
+        const string QueueName = "<your service bus queue name>";
         static IQueueClient queueClient;
 
         public ProductService(ApiDbContext context)
