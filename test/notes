@@ -1,0 +1,5 @@
+//==== notes
+
+
+New-AzureRmKeyVault -VaultName ‘wesleyandevkeyvaultuks' -ResourceGroupName ‘rg-wesleyan-dev-keyvault-uks' -Location 'UK South’
+New-AzureRmResourceGroup -Name "rg-wesleyan-dev-keyvault-uks" -Location "UK South
