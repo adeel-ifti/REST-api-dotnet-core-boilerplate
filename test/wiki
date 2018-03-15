@@ -1,1 +1,90 @@
-test
+
+
+
+Search wiki in this project
+Wikis
+
+Digital Scrum.wiki
+Azure Application Gateway, Networking Architecture
+
+Adeel Ifti13/03/2018Revisions
+Application Gateway - Networking Architecture choices:
+
+Does the IP or DNS change over the lifetime of the Application Gateway?
+
+If the architecture requires that you route traffic to an IP address rather than a DNS name, Azure Application Gateway may not be the right fit. Gateways are given a pubic IP when they are started, but when/if they are stopped they lose that IP address. If you don’t stop the Gateway you will keep the same IP. Note: Gateways do get a static DNS name made up of the GUID of the Gateway and an Azure domain, which can be provided as a CNAME for any custom domain you wish to use.
+
+For this reason, it is recommended to use a CNAME alias and point it to the DNS address of the Application Gateway.
+
+Architecture choices - using Application Gateway
+
+Option 1:
+
+laod1.jpg
+
+Option 2:
+
+architecture-24.png
+
+Notes:
+
+Azure Load Balancer is a multi-tenant, layer 4 load balancer platform that is part of the Azure SDN stack and frontends most services in Azure and provides per flow load balancing for UDP and TCP services.
+
+Application Gateway is an HTTP/HTTPS load balancer and WAF, and uses Azure Load Balancer to frontend the components that make up Application Gateway. This is done implicitly for you as part of the Application Gateway product and not something you have to configure as a customer. We basically use Azure Load Balancer to set up some plumbing underneath Application Gateway. This is why frontending Azure Application Gateway with Azure Load Balancer is really a noop, it's already happening.
+
+Traffic Manager is global DNS load balancing where a CNAME is returned to a client based on a TM profile. The TM profile you define governs how the CNAME returned to the client is determined. And the client then uses its resolver to determine the destination for the flow it will create directly to that destination. Traffic Manager is not in the data path of the application flow. You can frontend anything that has a public IP address endpoint, not internal endpoints inside a vnet (without an Instance-Level Public IP or ILPIP).
+
+Best approach is to think of application architectures and consider what tiers may exist and what functions each of the tiers performs and how it might interact with the next. For example, you may place TM on top of endpoints exposed by Application Gateway to have HTTP load balancing and WAF (and implicitly use Load Balancer for load balancing to Application Gateway and provide high availability) and then use Load Balancer on the backend to deliver high availability for a SQL AlwaysOn cluster. Or you can use Load Balancer to roll your own HTTP proxy layer, many different options are possible. We provide a toolbox for customers.
+
+Traffic Manager Pricing VS Load Balancer
+The job of Azure Load Balancer is to direct traffic inside a region. This is combined with Azure Traffic Manager, where traffic manager routes interior to a region between virtual machines.
+
+traffic vs load balancer.png
+
+Traffic Manager Pricing
+
+Traffic Manager billing is based on the number of DNS queries received, with a discount for services receiving more than 1 billion monthly queries. We also charge for each monitored endpoint (the rate depends on whether it’s an Azure or an external service).
+
+First 1 billion DNS queries/month	£0.403 per million queries
+Over 1 billion DNS queries/month	£0.28 per million queries
+Basic Health Checks
+Basic health checks (Azure)	£0.269 per Azure endpoint/month
+Fast interval health checks add-on (Azure)	£0.746 per Azure endpoint/month
+Basic health checks (external)	£0.403 per external endpoint/month
+Fast interval health checks add-on (external)	£1.491 per external endpoint/month
+Load Balancer Pricing
+
+Standard
+Load Balancer rules: (free during preview period)
+First five rules –£0.019/hour
+Additional rules—£0.008/rule/hour
+
+NAT rules: (free during preview period)
+First 100 rules—Free
+Additional rules—£0.008/rule/hour
+
+Data processed: (free during preview period)
+£0.004 per GB
+
+Public load balancing
+Every cloud service gets a free public load-balanced IP (VIP). If you want to load-balance on multiple VIPs, you can get additional VIPs for a nominal charge.
+
+You can assign up to five additional IPs to your Load Balancer.
+
+Internal load balancing
+Load balancing between virtual machines that reside inside a virtual network (internal load balancing) is free of charge.
+
+Sources:
+https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-faq 
+https://serverfault.com/questions/810281/how-to-place-azure-application-gateway-in-backend-pool-of-azure-load-balancer 
+http://sabbour.me/how-to-run-an-app-service-behind-a-waf-enabled-application-gateway/ 
+https://www.concurrency.com/blog/w/azure-traffic-manager-vs-azure-load-balancer 
+
+OWASP and security guidelines:
+https://www.credera.com/blog/infrastructure/is-azure-application-gateway-a-good-fit-for-my-application/ 
+
+
+
+
+Filter pages
+Pages
