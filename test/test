@@ -13,22 +13,12 @@ https://blogs.msdn.microsoft.com/jannemattila/2016/08/26/enhance-arm-deployments
 
 https://github.com/Azure/azure-quickstart-templates/blob/052433d056cf4437c101dd4f3f651a1fe1db7f81/201-traffic-manager-webapp/azuredeploy.json#L76-L95
 
-test file
+
+51.145.26.127
+
+2b848919-331a-4fff-ae74-ccf5a61f7857.cloudapp.net
 
 
- Does the IP or DNS change over the lifetime of the Application Gateway?
-
-The VIP can change if the gateway is stopped and started by the customer. The DNS associated with Application Gateway does not change over the lifecycle of the gateway. For this reason, it is recommended to use a CNAME alias and point it to the DNS address of the Application Gateway.
 
 
-The picture above was intended to illustrate there's a hierarchy of load balancing options in Azure. It's not how the load balancing options interact from a data path perspective. It's an attempt to indicate how they relate and where they play. You can mix and match them depending on what you need for your application.
-
-A couple of quick points:
-
-Azure Load Balancer is a multi-tenant, layer 4 load balancer platform that is part of the Azure SDN stack and frontends most services in Azure and provides per flow load balancing for UDP and TCP services.
-
-Application Gateway is an HTTP/HTTPS load balancer and WAF, and uses Azure Load Balancer to frontend the components that make up Application Gateway. This is done implicitly for you as part of the Application Gateway product and not something you have to configure as a customer. We basically use Azure Load Balancer to set up some plumbing underneath Application Gateway. This is why frontending Azure Application Gateway with Azure Load Balancer is really a noop, it's already happening.
-
-Traffic Manager is global DNS load balancing where a CNAME is returned to a client based on a TM profile. The TM profile you define governs how the CNAME returned to the client is determined. And the client then uses its resolver to determine the destination for the flow it will create directly to that destination. Traffic Manager is not in the data path of the application flow. You can frontend anything that has a public IP address endpoint, not internal endpoints inside a vnet (without an Instance-Level Public IP or ILPIP).
-
-Best approach is to think of application architectures and consider what tiers may exist and what functions each of the tiers performs and how it might interact with the next. For example, you may place TM on top of endpoints exposed by Application Gateway to have HTTP load balancing and WAF (and implicitly use Load Balancer for load balancing to Application Gateway and provide high availability) and then use Load Balancer on the backend to deliver high availability for a SQL AlwaysOn cluster. Or you can use Load Balancer to roll your own HTTP proxy layer, many different options are possible. We provide a toolbox for customers.
+51.143.159.151 
