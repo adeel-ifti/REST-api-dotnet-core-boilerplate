@@ -16,6 +16,10 @@ https://github.com/Azure/azure-quickstart-templates/blob/052433d056cf4437c101dd4
 Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
 
 
+Write-Host "##vso[task.setvariable variable=variableName]variable value"
+
+
+
 
 51.145.26.127
 
