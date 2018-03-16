@@ -20,7 +20,7 @@ Architecture choices - using Application Gateway
 
 Option 1:
 
-laod1.jpg
+laod1.jpgs
 
 Option 2:
 
@@ -73,6 +73,24 @@ You can assign up to five additional IPs to your Load Balancer.
 
 Internal load balancing
 Load balancing between virtual machines that reside inside a virtual network (internal load balancing) is free of charge.
+
+Traffic manager & app gateway - scenario testing:
+
+1) Azure application gateway undergoing updates:
+
+If app gateway settings are changed, or any update is applied, that doesn’t trigger IP or DNS change and, more importantly, traffic keeps getting routed through. Effectively meaning, app gateway never goes down until purposefully marked stopped by the customer.
+
+2) App gateway IP gets changed:
+
+I restarted the app-gateway using powershell (portal doesn’t allow start/stop) and IP was changed from 51.145.26.127 to 51.143.159.151, however that doesn’t impact traffic manager and no changes are required as TM endpoints gets associated with Azure resource network identity/DNS, not with the static ip.
+
+3) Traffic manager & app gateway, both are DNS oriented components (no static IP is made available):
+
+Both of the above components encourage DNS routing. If fixed IP based approach is required(A-Record) then we need to find alternatives. Found following workaround but it looks fiddly to say the least.
+https://stackoverflow.com/a/48121064/8752165
+
+4)
+
 
 Sources:
 https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-faq 
