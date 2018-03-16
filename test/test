@@ -13,6 +13,9 @@ https://blogs.msdn.microsoft.com/jannemattila/2016/08/26/enhance-arm-deployments
 https://wesleyan.visualstudio.com/Digital%20Programme/_wiki/wikis/Digital%20Scrum.wiki?wikiVersion=GBwikiMaster&pagePath=%2FTechnical-Design-Team-Home-Page%2FTechnical-Documentation%2FPlatform-Specifications%2FAzure-Application-Gateway%2C-Networking-Architecture
 https://github.com/Azure/azure-quickstart-templates/blob/052433d056cf4437c101dd4f3f651a1fe1db7f81/201-traffic-manager-webapp/azuredeploy.json#L76-L95
 
+Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
+
+
 
 51.145.26.127
 
