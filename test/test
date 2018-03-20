@@ -1,6 +1,8 @@
 ============
 
 https://stackoverflow.com/questions/36071169/cannot-set-secret-value-in-azure-key-vault
+Set-AzureRmKeyVaultAccessPolicy -ResourceGroupName $keyVaultResourceGroupName -VaultName $keyVaultName -ObjectId $userobjectid -PermissionsToSecrets get
+
 =============
 
 https://serverfault.com/questions/833901/reverse-proxy-type-setup-on-azure/833940#833940
