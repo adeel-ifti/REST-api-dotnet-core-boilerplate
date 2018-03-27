@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "uniqueDnsName": {
+      "type": "string",
+      "metadata": {
+        "description": "Relative DNS name for the traffic manager profile, resulting FQDN will be <uniqueDnsName>.trafficmanager.net, must be globally unique."
+      }
+    },
+       "targetDnsName": {
+      "type": "string",
+      "metadata": {
+        "description": "Relative DNS name for the traffic manager profile, resulting FQDN will be <uniqueDnsName>.trafficmanager.net, must be globally unique."
+      }
+    },
+
+     
+       "trafficManagerResourceId": {
+      "type": "string",
+      "metadata": {
+        "description": "Relative DNS name for the traffic manager profile, resulting FQDN will be <uniqueDnsName>.trafficmanager.net, must be globally unique."
+      }
+    }
+
+
+
+  },
+  "variables": {
+    "tmApiVersion": "2015-11-01"
+  },
+  "resources": [
+    {
+      "apiVersion": "2015-11-01",
+      "type": "Microsoft.Network/trafficManagerProfiles",
+      "name": "ExampleWesleyanTMProfile",
+      "location": "global",
+      "properties": {
+        "profileStatus": "Enabled",
+        "trafficRoutingMethod": "Performance",
+        "dnsConfig": {
+          "relativeName": "[parameters('uniqueDnsName')]",
+          "ttl": 30
+        },
+        "monitorConfig": {
+          "protocol": "HTTP",
+          "port": 80,
+          "path": "/"
+        },
+        "endpoints": [
+          {
+            "name": "endpoint0",
+                "type": "Microsoft.Network/trafficManagerProfiles/azureEndpoints",
+                "properties": {
+                    "target":  "[parameters('targetDnsName')]",
+                    "targetResourceId":  "[parameters('trafficManagerResourceId')]",
+                    "endpointStatus": "Enabled",
+                    "weight": 1,
+                            "priority": 1,
+                            "endpointLocation": "UK South"
+                }
+          }
+         
+        ]
+      }
+    }
+  ]
+}
